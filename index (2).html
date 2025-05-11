@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visualisasi Bangun Ruang 3D</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Visualisasi Bangun Ruang 3D</h1>
+  </header>
+
+  <main>
+    <nav id="menu">
+      <button onclick="selectShape('kubus')">Kubus</button>
+      <button onclick="selectShape('balok')">Balok</button>
+      <button onclick="selectShape('prisma')">Prisma</button>
+      <button onclick="selectShape('limas')">Limas</button>
+      <button onclick="selectShape('tabung')">Tabung</button>
+      <button onclick="selectShape('kerucut')">Kerucut</button>
+    </nav>
+
+    <div id="sub-menu"></div>
+    <div id="controls" style="display: none;">
+      <button onclick="toggleNet()">Buka/Tutup Jaring-jaring</button>
+    </div>
+
+    <section id="canvas-container"></section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r148/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
